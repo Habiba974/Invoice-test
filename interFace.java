@@ -16,6 +16,8 @@ import javax.swing.JTable;
 
 public class interFace extends javax.swing.JFrame {
 
+    
+
    /**
  *
  * @author Habiba
@@ -212,10 +214,8 @@ public class interFace extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new interFace().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new interFace().setVisible(true);
         });
     }
 

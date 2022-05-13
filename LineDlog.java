@@ -15,6 +15,8 @@ import javax.swing.JTextField;
  * @author Habiba
  */
 public class LineDlog extends JDialog{
+
+    private static final long serialVersionUID = 1L;
     private JTextField itemNameField;
     private JTextField itemCountField;
     private JTextField itemPriceField;
