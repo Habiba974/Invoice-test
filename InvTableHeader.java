@@ -4,6 +4,8 @@
  */
 package coursetest.data;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 /**
@@ -15,7 +17,7 @@ public class InvTableHeader {
     private String customer;
     private Date invDate;
     private ArrayList<InvTableLine> lines;
-
+private DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
     public InvTableHeader() {
     }
 
@@ -72,7 +74,7 @@ public class InvTableHeader {
 
     @Override
     public String toString() {
-        return "InvoiceHeader{" + "num=" + num + ", customer=" + customer + ", invDate=" + invDate + '}';
+        return num + "," + df.format(invDate) + "," + customer;
     }
     
 }
